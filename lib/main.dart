@@ -14,3 +14,18 @@ class Todo extends StatelessWidget {
     );
   }
 }
+
+class _TodoListState extends State<TodoList> {
+  // Save Data
+  final List<String> _todoList = <String>[];
+  // text field
+  final TextEditingController _textEditingController = TextEditingController();
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('To-do List'),
+      ),
+    );
+  }
+}
