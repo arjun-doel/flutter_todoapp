@@ -51,7 +51,12 @@ class _TodoListState extends State<TodoList> {
 
   // this Generate list of item widgets
   Widget _buildTodoItem(String title) {
-    return ListTile(title: Text(title));
+    return ListTile(
+      title: Text(title),
+      onTap: () => {
+        const SnackBar(content: Text('Tap')),
+      },
+    );
   }
 
   // display a dialog for the user to enter items
